@@ -1,6 +1,7 @@
+import java.util.Scanner;
 /**
  *
- * @author 
+ * @author David 
  */
 public class Main {
 
@@ -9,7 +10,17 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    // create a variable to keep track of what number we are on
+    int count = 1;
+    int total = 1;
+    while(count <= 5){
+      // multlpie the numbers as we go into total
+      total = total * count;
+      // multlpie 1 to increase it
+      count = count + 1;
+    }
+    // print to screen total
+    System.out.println("The total is" + total);
     
   }
 }
